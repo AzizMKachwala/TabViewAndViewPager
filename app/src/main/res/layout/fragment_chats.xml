@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ChatsFragment"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtChats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#F44336"
+        android:gravity="center"
+        android:text="CHATS VIEW"
+        android:textColor="#263238"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/etvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtChats"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="USERNAME"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etvUsername"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etvPassword"
+        android:text="Click to Toast"/>
+
+</RelativeLayout>
